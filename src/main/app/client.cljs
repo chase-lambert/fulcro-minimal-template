@@ -1,10 +1,12 @@
-(ns app.client
+(ns main.app.client
   (:require 
     [com.fulcrologic.fulcro.application :as app]
     [com.fulcrologic.fulcro.components :as comp :refer [defsc]]
-    [com.fulcrologic.fulcro.dom :as dom]))
+    [com.fulcrologic.fulcro.dom :as dom]
+    [com.fulcrologic.fulcro.react.version18 :refer [with-react18]]))
 
-(defonce app (app/fulcro-app))
+(defonce app 
+  (with-react18 (app/fulcro-app)))
 
 (defsc Root [this props]
   (dom/div "TODO"))
