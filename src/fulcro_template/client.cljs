@@ -1,4 +1,4 @@
-(ns main.app.client
+(ns fulcro-template.client
   (:require 
     [com.fulcrologic.fulcro.application :as app]
     [com.fulcrologic.fulcro.components :as comp :refer [defsc]]
